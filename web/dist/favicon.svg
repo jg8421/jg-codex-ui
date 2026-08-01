@@ -1,0 +1,26 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favicon-bg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1c2f4f" />
+      <stop offset="1" stop-color="#1f6fbd" />
+    </linearGradient>
+    <linearGradient id="favicon-track" x1="17" y1="17" x2="47" y2="47" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b8d7ff" />
+      <stop offset="1" stop-color="#6bc6ff" />
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#favicon-bg)" />
+  <rect x="12" y="12" width="40" height="9" rx="4.5" fill="rgba(236, 246, 255, 0.24)" />
+  <circle cx="18" cy="16.5" r="1.6" fill="#f8fbff" fill-opacity="0.92" />
+  <circle cx="23" cy="16.5" r="1.6" fill="#f8fbff" fill-opacity="0.72" />
+  <circle cx="28" cy="16.5" r="1.6" fill="#f8fbff" fill-opacity="0.56" />
+
+  <path
+    d="M45 23.5C42.3 20 38 17.8 33.3 17.8C25 17.8 18.3 24.5 18.3 32.8C18.3 41.1 25 47.8 33.3 47.8C38 47.8 42.3 45.6 45 42.1"
+    stroke="url(#favicon-track)"
+    stroke-width="5.8"
+    stroke-linecap="round"
+  />
+  <circle cx="45.4" cy="32.8" r="3.1" fill="#f4fbff" />
+</svg>

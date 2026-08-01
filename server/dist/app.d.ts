@@ -1,0 +1,37 @@
+import type { Express } from "express";
+import type { UserStore } from "./auth/userStore";
+import type { CodexAppServer } from "./codex/codexAppServer";
+import type { UserWorkspaceStore } from "./workspace/userWorkspaceStore";
+import type { WorkspaceStatusStore } from "./workspace/workspaceStatusStore";
+import type { UserSettingsStore } from "./settings/userSettingsStore";
+import type { HistoryQueryService } from "./history/query/historyQueryService";
+import { type GitAuthenticatedCommandRunner } from "./git/gitAuthenticatedCommand";
+import type { GitCredentialStore } from "./git/gitCredentialStore";
+import { type GitPushMetadataStore } from "./git/gitPushMetadataStore";
+import { summarizeGitCommitViaCodexExec } from "./git/gitCommitSummaryCliService";
+import type { ThreadListService } from "./threadList/threadListService";
+import type { CodexMcpCli } from "./codex/codexMcpCli";
+type StatusSnapshot = {
+    codex?: unknown;
+    codexTask?: unknown;
+    ws?: unknown;
+};
+export declare function createApp(opts: {
+    sessionSecret: string;
+    startedAtMs?: number;
+    getStatusSnapshot?: () => StatusSnapshot;
+    getActiveTurnIds?: (threadId: string) => string[];
+    codex?: CodexAppServer;
+    runCodexCommand?: Parameters<typeof summarizeGitCommitViaCodexExec>[0]["runCommand"];
+    codexMcp?: CodexMcpCli | null;
+    userStore?: UserStore;
+    userWorkspaceStore?: UserWorkspaceStore;
+    workspaceStatusStore?: WorkspaceStatusStore;
+    userSettingsStore?: UserSettingsStore;
+    gitCredentialStore?: GitCredentialStore | null;
+    gitPushMetadataStore?: GitPushMetadataStore | null;
+    gitAuthenticatedCommandRunner?: GitAuthenticatedCommandRunner;
+    historyQuery?: HistoryQueryService | null;
+    threadListService?: ThreadListService | null;
+}): Express;
+export {};

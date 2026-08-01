@@ -1,0 +1,1 @@
+{"version":3,"file":"markdownAst.js","sourceRoot":"","sources":["../../../src/chat/markdown/markdownAst.ts"],"names":[],"mappings":";;AAUA,4CAQC;AAhBD;;;;;;;GAOG;AACH,SAAgB,gBAAgB,CAAC,QAAgB;IAC/C;;OAEG;IACH,MAAM,kBAAkB,GAAG,MAAM,CAAC,QAAQ,IAAI,EAAE,CAAC,CAAC;IAClD,IAAI,CAAC,kBAAkB,CAAC,IAAI,EAAE;QAAE,OAAO,IAAI,CAAC;IAE5C,OAAO,IAAI,CAAC;AACd,CAAC"}

@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+"use strict";
+
+/**
+ * 兼容入口：
+ * - 旧版本 `package.json#bin.ccw` 指向 `bin/ccw`；
+ * - 当前版本已改为 `bin/ccw.js`，但保留该文件以避免用户手动执行时踩到 bash 依赖。
+ */
+require("./ccw.js");
+

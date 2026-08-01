@@ -1,0 +1,8 @@
+node_modules/
+.codex-web/
+.env
+.env.*
+!.env.example
+*.log
+uploads/
+external-uploads/
